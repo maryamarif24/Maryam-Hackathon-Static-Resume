@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Page Container for Boxed Layout -->
+    <div class="page-box">
+        <div class="cv-container">
+            <header class="header">
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <h1>Maryam Arif</h1>
+                        <p>Software Developer | Web Developer</p>
+                    </div>
+                    <img src="ProfilePic.PNG" alt="Maryam Arif" class="profile-pic"> <!-- Updated src here -->
+                </div>
+            </header>
+
+            <!-- CV Layout with Separate Containers -->
+            <div class="cv-layout">
+
+                <!-- Personal Information Container -->
+                <div class="container personal-info-container">
+                    <h2>Personal Information</h2>
+                    <ul>
+                        <li>Email: maryamarif1313@gmail.com</li>
+                        <li>Phone: +123456789</li>
+                        <li>Location: Karachi, Pakistan</li>
+                    </ul>
+                </div>
+
+                <!-- Skills Container with Toggle Button -->
+                <div class="container skills-container">
+                    <button class="toggle-button" onclick="toggleSkills()">Show Skills</button>
+                    <div id="skills-content" class="skills-content">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Next.Js</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Container with Toggle Button -->
+                <div class="container education-container">
+                    <button class="toggle-button" onclick="toggleEducation()">Show Education</button>
+                    <div id="education-content" class="education-content">
+                        <h2>Education</h2>
+                        <div>
+                            <h3>O-Levels</h3>
+                            <p>The Anchorage School</p>
+                            <p>2011 - 2023</p>
+                        </div>
+                        <!-- Qualifications Section -->
+                        <div class="qualifications">
+                            <h3>Qualifications</h3>
+                            <ul>
+                                <li>Certified Web Developer - CodeAcademy</li>
+                                <li>Advanced JavaScript - Udemy</li>
+                                <li>React Fundamentals - Coursera</li>
+                                <li>TypeScript - Coursera</li>
+                                <li>Web 3.0 Metaverse and Artificial Intelligence - GIAIC</li>
+                            </ul>
+                        </div>
+                        <!-- School/College/University Names Section -->
+                        <div class="edu-names">
+                            <h3>Institutions Attended</h3>
+                            <ul>
+                                <li>High School - The Anchorage School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Container with Toggle Button -->
+                <div class="container experience-container">
+                    <button class="toggle-button" onclick="toggleExperience()">Show Experience</button>
+                    <div id="experience-content" class="experience-content">
+                        <h2>Experience</h2>
+                        <div>
+                            <h3>Software Developer</h3>
+                            <p>GIAIC</p>
+                            <p>2023 - Present</p>
+                        </div>
+
+                        <div>
+                            <h3>Web Developer</h3>
+                            <p>GIAIC</p>
+                            <p>2023 - Present</p>
+                        </div>
+                        <!-- Add more experience entries here if needed -->
+                    </div>
+                </div>
+
+            </div>
+
+            <footer class="footer">
+                <p>© 2024 Maryam Arif | All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
